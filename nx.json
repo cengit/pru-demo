@@ -1,0 +1,25 @@
+{
+  "npmScope": "test-demo",
+  "implicitDependencies": {
+    "workspace.json": "*",
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "user-app": {
+      "tags": []
+    },
+    "user-app-e2e": {
+      "tags": [],
+      "implicitDependencies": ["user-app"]
+    },
+    "ui": {
+      "tags": []
+    }
+  }
+}
